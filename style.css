@@ -21,9 +21,11 @@ body {
     display: none;
 }
 .navbar{
-    box-shadow: 0px 5px 10px 0px #aaa;
+    box-shadow: 0px 3px 5px 0px #3a3838;
+    background-color: rgba(245, 245, 245, 0.8);
+    /* background-color: #417C76; */
     width:100%;
-    position:fixed;;
+    position:fixed;
     opacity: 0.85;
     z-index:10;
 }
@@ -54,4 +56,50 @@ body {
 .navbar a:hover{
     color: #000;
     text-decoration: underline;
+}
+/* ###################showcase###################### */
+.showcase{
+    height: 90vh;
+    background: url("./img/showcase.jpg");;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+}
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 35%;
+    float:right;
+    margin:0 8rem ;
+    
+}
+.showcase h1{
+    font-size: 5rem;
+}
+.showcase p{
+    font-size:2.5rem;
+}
+.btn{
+    display:inline-block;
+    text-decoration: none;
+    color:black;
+}
+.showcase a{
+    color:aliceblue;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.showcase .btn-check{
+    border-radius: 50px;;
+    background: #000;
+    padding:5px;
+    width:200px;
+    margin-left:14.9rem ;
+    margin-top:1.8rem;
+}
+.btn-check:hover{
+    color: #73B5AB;
 }
