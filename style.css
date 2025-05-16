@@ -103,3 +103,35 @@ body {
 .btn-check:hover{
     color: #73B5AB;
 }
+/* ################health info ################## */
+.health-info{
+    padding:50px;
+    background: #c3cecc;
+}
+.health-cont{
+    display:flex;
+    flex-wrap: wrap;
+}
+.health-info h3{
+    font-size:4rem;
+    text-align: center;
+}
+.health-info p{
+    font-size: 1.5rem;
+}
+.health-image{
+    flex:0.5 1 400px;
+    /* border:5px solid #c90606;*/
+    padding:30px;
+}
+.health-content{
+    flex:1 1 400px;
+    /* border:3px solid #c90606; */
+    padding:30px ;
+    padding-top:5rem;
+}
+.health-image img{
+    height:300px;
+    width: 80%;
+    margin-left: 5.5rem;
+}   
