@@ -117,7 +117,7 @@ body {
     text-align: center;
 }
 .health-info p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .health-image{
     flex:0.5 1 400px;
@@ -135,3 +135,9 @@ body {
     width: 80%;
     margin-left: 5.5rem;
 }   
+
+/* ###################categories################## */
+.category{
+    padding: 50px;
+    background: #f6faf9;
+}
