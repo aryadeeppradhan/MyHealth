@@ -141,3 +141,7 @@ body {
     padding: 50px;
     background: #f6faf9;
 }
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
