@@ -56,7 +56,7 @@ body {
 }
 .navbar a{
     text-decoration: none;
-    color:#2c2c2c;
+    color: #4a5568;
     transition: all 0.3s ease;
     position: relative;/*for hover effect*/
 }
@@ -81,7 +81,7 @@ body {
 /* ###################showcase###################### */
 .showcase{
     height: 90vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background: linear-gradient(135deg, #7743f0 0%, #633c8a 50%, #da2ded 100%);
     /* background-size: cover;
     background-position: center;
     background-repeat: no repeat; */
@@ -149,16 +149,23 @@ body {
 
 .btn-check{
     border-radius: 50px;;
-    background: #000;
+    background: rgba(255, 255, 255, 0.2);
+    color:white;
+    font-weight: 600;;
+    border:2px solid rgba(255, 255, 255, 0.3);;
+    cursor: pointer;
+    transition: all 0.3s ease;
     padding: 1.5rem;
 }
 .btn-check:hover{
-    color: #73B5AB;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 /* ################health info ################## */
 .health-info{
     padding:50px;
-    background: #c3cecc;
+    background: linear-gradient(to bottom, #f7fafc, #edf2f7);
 }
 .health-cont{
     display:flex;
@@ -170,6 +177,12 @@ body {
 }
 .health-info p{
     font-size: 1.7rem;
+    color: #4a5568;
+}
+.health-image{
+    flex:0.5 1 400px;
+    /* border:5px solid #c90606;*/
+    padding:30px;
 }
 .health-content{
     flex:1 1 400px;
@@ -177,6 +190,11 @@ body {
     padding:30px ;
     padding-top:5rem;
 }
+.health-image img{
+    height:300px;
+    width: 80%;
+    margin-left: 5.5rem;
+} 
 
 /* ###################categories################## */
 .category{
