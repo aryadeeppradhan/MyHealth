@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
 *,*::before,*::after {
     box-sizing: border-box;
     padding: 0;
@@ -9,7 +8,8 @@ html{
     font-size: 62.5%;/*default 16px hota*/
 }
 body {
-    font-family: 'Afacad', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
 }
 .container{
     max-width: 1200px;
@@ -26,8 +26,10 @@ body {
     /* background-color: #417C76; */
     width:100%;
     position:fixed;
-    opacity: 0.85;
+    opacity: 1;
     z-index:10;
+    /* border-bottom: 1px solid #c90606; */
+    
 }
 .navbar-container{
     display:flex;
@@ -47,26 +49,66 @@ body {
 .logo{
     font-size: 2.5rem;
     font-weight: 700;
-    color: #000;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .navbar a{
     text-decoration: none;
     color:#2c2c2c;
+    transition: all 0.3s ease;
+    position: relative;/*for hover effect*/
 }
 .navbar a:hover{
-    color: #000;
-    text-decoration: underline;
+    color: #667eea;
+    transform: translateY(-2px);
 }
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+}
+.navbar a:hover::after {
+    width: 100%;
+}
+        
 /* ###################showcase###################### */
 .showcase{
     height: 90vh;
-    background: linear-gradient(135deg, #6f88fb 0%, #764ba2 50%, #f093fb 100%);
-    background-size: cover;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    /* background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
+    background-repeat: no repeat; */
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    position:relative;
+    overflow: hidden;
+    color:aliceblue
+}
+
+.particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: floatParticle 8s infinite linear;
+    z-index: 0;
+}
+.particle:nth-child(1) { width: 10px; height: 10px; top: 20%; left: 10%; animation-delay: 0s; }
+.particle:nth-child(2) { width: 6px; height: 6px; top: 20%; left: 80%; animation-delay: 0s; }
+.particle:nth-child(3) { width: 7px; height: 7px; top: 60%; left: 15%; animation-delay: 0s; }
+.particle:nth-child(4) { width: 8px; height: 8px; top: 80%; left: 20%; animation-delay: 0s; }
+@keyframes floatParticle {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
 }
 .showcase-container{
     display: flex;
@@ -78,6 +120,8 @@ body {
     width: 35%;
     padding: 0 2rem;
     margin:0 8rem ;
+    position: relative;
+    z-index: 1;
     
 }
 .showcase h1{
@@ -127,22 +171,12 @@ body {
 .health-info p{
     font-size: 1.7rem;
 }
-.health-image{
-    flex:0.5 1 400px;
-    /* border:5px solid #c90606;*/
-    padding:30px;
-}
 .health-content{
     flex:1 1 400px;
     /* border:3px solid #c90606; */
     padding:30px ;
     padding-top:5rem;
 }
-.health-image img{
-    height:300px;
-    width: 80%;
-    margin-left: 5.5rem;
-}   
 
 /* ###################categories################## */
 .category{
