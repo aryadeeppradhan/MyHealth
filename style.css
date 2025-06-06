@@ -276,3 +276,51 @@ body {
     font-size: 1.3rem;
 }
 /* ###########################about us################# */
+.about-content{
+    background:#3c3f51;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-content h2{
+    font-size: 4rem;
+    color: #f7fafc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-content p{
+    font-size: 1.8rem;
+    color: #f7fafc;
+    text-align: center;
+    max-width: 800px;
+}
+/* ###############################Footer############################### */
+.foot-container{
+    background:#28232e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foot-content{
+    display:flex;
+    justify-content: space-evenly;
+}
+.foot-about{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align:center; */
+    width:200px;
+}
+.foot-about h3{
+    font-size: 2rem;
+    color: #f7fafc;
+}
+.foot-about p{
+    font-size: 1.5rem;
+    color: #f7fafc;
+}
