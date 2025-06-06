@@ -315,6 +315,7 @@ body {
     /* align-items: center; */
     /* text-align:center; */
     width:200px;
+    padding: 20px;
 }
 .foot-about h3{
     font-size: 2rem;
@@ -324,3 +325,56 @@ body {
     font-size: 1.5rem;
     color: #f7fafc;
 }
+.foot-topics{
+    display:flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    padding: 20px;
+}
+.foot-topics h3{
+    font-size: 2rem;
+    color: #f7fafc;
+}
+.foot-topics a{
+    font-size: 1.5rem;
+    text-decoration:none;
+    color:white;
+    transition: all 0.3s ease;
+    position: relative;/*for hover effect*/
+    line-height: 1.9;
+}
+.foot-topics a:hover{
+    color: #667eea;
+    /* transform: translateY(-1px); */
+    
+}
+.foot-contact{
+    display:flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    padding: 20px;
+}
+.foot-contact h3{
+    font-size: 2rem;
+    color: #f7fafc;
+}
+.foot-contact a,
+.foot-contact p{
+    font-size: 1.5rem;
+    text-decoration:none;
+    color:white;
+    position: relative;
+    line-height: 1.9;
+}
+.foot-tag{
+    border-top: 1px solid gray;
+    color:white;
+    width:100%;
+    text-align: center;
+}
+.foot-tag p{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+
