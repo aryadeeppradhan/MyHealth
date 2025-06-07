@@ -173,7 +173,7 @@ body {
 }
 .btn-check:hover{
     background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-3px);
+    transform: translateY(-0.5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 /* ################health info ################## */
@@ -265,7 +265,7 @@ body {
     left: 100%;
 }
 .inside-box:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     border-color: #667eea;
 }
@@ -298,7 +298,7 @@ body {
 }
 /* ###############################Footer############################### */
 .foot-container{
-    background:#28232e;
+    background:#1a202c;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -367,7 +367,7 @@ body {
     line-height: 1.9;
 }
 .foot-tag{
-    border-top: 1px solid gray;
+    border-top: 1px solid #2d3748;
     color:white;
     width:100%;
     text-align: center;
