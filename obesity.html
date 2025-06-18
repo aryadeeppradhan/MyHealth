@@ -33,6 +33,7 @@
         </div>
     </section>
     <section class="about-bmi" id="aboutbmi">
+        <div class="info-grid">
         <div class="bmi-content">
             <h2>Understanding BMI & Obesity</h2>
             <p>Body Mass Index (BMI) is a simple calculation using a person's height and weight. The formula is BMI = kg/m² where kg is a person's weight in kilograms and m² is their height in metres squared. <br><br>BMI is a useful measure of overweight and obesity. It is calculated the same way for both adults and children. However, it is interpreted differently for children and teens, even though it is calculated using the same formula. <br><br> For adults 20 years old and older, BMI is interpreted using standard weight status categories. These categories are the same for men and women of all body types and ages.</p>
@@ -60,7 +61,73 @@
                     <div class="range-indicator obese"></div>
                 </div>
         </div>
+    </div>
     </section>
+    <section class="calc" id="calculator">
+        <h2>BMI Calculator</h2>
+        <form class="calc-form" id="bmiform">
+            <div class="form-det">
+                <label class="form-label" for="height">Height</label>
+                <input type="number" id="height" class="form-inp" required placeholder="Enter your height">
+                <div class="unit-selector">
+                    <div class="unit-option">
+                        <input type="radio" id="cm" name="heightunit" value="cm" checked>
+                        <label for="cm">Centimeters (cm)</label>
+                    </div>
+                    <div class="unit-option">
+                        <input type="radio" id="feet" name="heightunit" value="feet">
+                        <label for="feet">Feet & Inches</label>
+                    </div>
+                </div>
+            </div>                    
+            <div class="form-det" id="inches">
+                <label class="form-label" for="inches">Inches</label>
+                <input type="number" id="inches" class="form-inp" placeholder="Additional inches">
+            </div>
+            <div class="form-det">
+                <label class="form-label" for="weight">Weight</label>
+                <input type="number" id="weight" class="form-inp" required placeholder="Enter your weight">
+                <div class="unit-selector">
+                    <div class="unit-option">
+                        <input type="radio" id="kg" name="weightunit" value="kg" checked>
+                        <label for="kg">Kilograms (kg)</label>
+                    </div>
+                    <div class="unit-option">
+                        <input type="radio" id="lbs" name="weightunit" value="lbs">
+                        <label for="lbs">Pounds (lbs)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-det">
+                <label class="form-label" for="age">Age</label>
+                <input type="number" id="age" class="form-inp" required placeholder="Enter your age">
+            </div>
+            <div class="form-det">
+                <label class="form-label" for="gender">Gender</label>
+                <select id="gender" class="form-inp" required>
+                    <option value="">Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <button type="submit" class="calculate-btn">Calculate BMI</button>
+        </form>
+    </section>
+            <!-- Results Section -->
+            <section class="results-section" id="results">
+                <div class="result-card" id="resultCard">
+                    <div class="bmi-value" id="bmiValue">0.0</div>
+                    <div class="bmi-category" id="bmiCategory">Your BMI Category</div>
+                    <div class="result-description" id="resultDescription">Your BMI result will appear here</div>
+                </div>
+                
+                <div class="recommendations" id="recommendations">
+                    <h3>Personalized Recommendations</h3>
+                    <ul id="recommendationsList">
+                        <!-- Recommendations will be populated by JavaScript -->
+                    </ul>
+                </div>
+            </section>
     </div>
     </main>
 </html>
