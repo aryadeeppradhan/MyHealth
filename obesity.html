@@ -110,24 +110,20 @@
                     <option value="female">Female</option>
                 </select>
             </div>
-            <button type="submit" class="calculate-btn">Calculate BMI</button>
+            <button type="submit" class="calc-btn">Calculate BMI</button>
         </form>
     </section>
-            <!-- Results Section -->
-            <section class="results-section" id="results">
-                <div class="result-card" id="resultCard">
-                    <div class="bmi-value" id="bmiValue">0.0</div>
-                    <div class="bmi-category" id="bmiCategory">Your BMI Category</div>
-                    <div class="result-description" id="resultDescription">Your BMI result will appear here</div>
-                </div>
-                
-                <div class="recommendations" id="recommendations">
-                    <h3>Personalized Recommendations</h3>
-                    <ul id="recommendationsList">
-                        <!-- Recommendations will be populated by JavaScript -->
-                    </ul>
-                </div>
-            </section>
+    <section class="res" id="results">
+        <div class="res-cont" id="res">
+            <div class="bmi-value" id="bmivalue">0.0</div>
+            <div class="bmi-category" id="bmicategory">Your BMI Category</div>
+            <div class="res-desc" id="resultDescription">Your BMI result will appear here</div>
+        </div>
+        <div class="recommendation" id="recommendations">
+            <h3>Personalized Recommendations</h3>
+            <ul id="recommendationsList"></ul>
+        </div>
+    </section>
     </div>
     </main>
 </html>
