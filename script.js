@@ -42,7 +42,7 @@ document.getElementById('bmiform').addEventListener('submit',function(e){
     }else{
         agegroup = 'old';
     }
-// Determine category and styling
+//recommendation
     let category, color, bgColor, description, recommendations;
     if (agegroup === 'child'||agegroup === 'teen'){
         category = 'BMI-for-age';
@@ -164,4 +164,41 @@ document.getElementById('bmiform').addEventListener('submit',function(e){
             ];
         }
     }
+// Result
+    document.getElementById('bmivalue').textContent = bmi.toFixed(1);
+    document.getElementById('bmicategory').textContent = category;
+    document.getElementById('resultDescription').textContent = description;
+    const results = document.getElementById('results');
+    results.style.backgroundColor = bgColor;
+    results.style.border = `2px solid ${color}`;
+    const bmival = document.getElementById('bmivalue');
+    const bmicat = document.getElementById('bmicategory');
+    bmival.style.color = color;
+    bmicat.style.color = color;
+    const recList = document.getElementById('recommendationsList');
+    recList.innerHTML = '';
+    recommendations.forEach(rec => {
+        const li = document.createElement('li');
+        li.textContent = rec;
+        recList.appendChild(li);
+    });
+    const result = document.getElementById('results');
+    result.classList.add('show');
+    result.scrollIntoView(
+        { behavior: 'smooth' 
+
+        });
+});
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+    anchor.addEventListener('click', function (e){
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){
+            target.scrollIntoView({
+                behavior:'smooth',
+                block:'start'
+            });
+        }
+    });
 });

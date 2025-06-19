@@ -511,7 +511,7 @@ body {
 .calc-form{
     max-width:500px;
     margin:0 auto;
-    font-size: 1.8rem;
+    font-size: 2rem;
     
 }
 .form-det{
@@ -547,7 +547,7 @@ body {
     align-items:center;
     gap:0.5rem;
     color: #4a5568;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }        
 .unit-option input[type="radio"]{
     accent-color: #667eea;
@@ -563,7 +563,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
         
 .calc-btn:hover {
@@ -586,6 +586,16 @@ body {
     display: block;
     animation: slideInUp 0.5s ease-out;
 }        
+@keyframes slideInUp{
+    from{
+    opacity: 0;
+    transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }    
+}
 .res-cont{
     text-align: center;
     padding: 2rem;
@@ -593,17 +603,17 @@ body {
     margin-bottom: 2rem;
 }     
 .bmi-value{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
 }      
 .bmi-category{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }        
 .res-desc{
-    font-size: 1.1rem;
+    font-size: 2rem;
     line-height: 1.6;
     opacity: 0.8;
 }        
@@ -616,7 +626,7 @@ body {
 .recommendation h3{
     color: #2d3748;
     margin-bottom: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }       
 .recommendation ul{
     list-style: none;
@@ -627,6 +637,7 @@ body {
     color: #4a5568;
     position: relative;
     padding-left: 1.5rem;
+    font-size: 1.6rem;
 }       
 .recommendation li::before{
     content: '✓';
