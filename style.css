@@ -646,3 +646,127 @@ body {
     color: #38a169;
     font-weight: bold;
 }
+/* #################water################## */
+.daily-tracker{
+    /* background: #f8f9ff; */
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.daily-tracker h3{
+    text-align: center;
+    font-size: 3rem;
+    color: #7c3aed;
+    margin-bottom: 1rem;
+}
+.progress{
+    /* display:none; */
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+.progress h4{
+    color: #7c3aed; 
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+.progress-cont{
+    background: #e9ecef;
+    border-radius: 25px;
+    height: 30px;
+    margin: 1rem 0;
+    overflow: hidden;
+    position: relative;
+}
+.progress-bar{
+    background: linear-gradient(90deg, #17a2b8 0%, #28a745 100%);
+    height: 100%;
+    border-radius: 25px;
+    width: 0%;
+    transition: width 0.5s ease;
+    position: relative;
+}
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #495057;
+    z-index: 10;
+}
+.intake{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.status{
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+.status-val{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #7c3aed;
+}
+.status-label{
+    color: #6c757d;
+    font-size: 1.5rem;
+}
+.intake-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.7rem;
+    color: #495057;
+    margin-bottom: 1rem;
+}    
+.water-visual{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    height: 150px;
+}
+.add-sec{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+.add-btn{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:0.8rem 1.2rem;
+    border-radius:15px;
+    cursor:pointer;
+    font-size:1.5rem;
+    transition:transform 0.2s;
+}
+.add-btn:hover{
+    transform:translateY(-2px);
+}
+.reset{
+    text-align:center; 
+    margin-top:3rem;
+}
+.reset-btn{
+    background:#6c757d;
+    color:white;
+    border:none;
+    padding:1rem 2rem;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:1.8rem;
+    font-weight:500;
+}

@@ -96,3 +96,43 @@
             <ul id="recommendationsList"></ul>
         </div>
     </section>
+    <section class="daily-tracker">
+        <h3>Daily Water Tracking</h3>       
+        <div class="progress" id="progress-section">
+            <h4>Your Progress Today</h4>
+            <div class="progress-cont">
+                <div class="progress-bar" id="progress-bar"></div>
+                <div class="progress-text" id="progress-text">0%</div>
+            </div>
+            <div class="intake">
+                <div class="status">
+                    <div class="status-val" id="consumed">0L</div>
+                    <div class="status-label">Consumed</div>
+                </div>
+                <div class="status">
+                    <div class="status-val" id="remaining">0L</div>
+                    <div class="status-label">Remaining</div>
+                </div>
+                <div class="status">
+                    <div class="status-val" id="goal">0L</div>
+                    <div class="status-label">Daily Goal</div>
+                </div>
+            </div>
+        </div>  
+        <div class="intake-counter">
+            <span id="glasses">0</span> 
+            <p>glasses consumed today</p>
+        </div>
+        <div class="water-visual" id="water-glasses">
+            <!-- from js -->
+        </div>
+        <div class="add-sec">
+            <button class="add-btn" onclick="addCustomWater(250)">+250ml Glass</button>
+            <button class="add-btn" onclick="addCustomWater(500)">+500ml Bottle</button>
+            <button class="add-btn" onclick="addCustomWater(750)">+750ml Large</button>
+            <button class="add-btn" onclick="addCustomWater(1000)">+1L Bottle</button>
+        </div>
+        <div class="reset">
+            <button class="reset-btn" onclick="reset()">Reset Day</button>
+        </div>
+    </section>
